@@ -1,0 +1,19 @@
+body {
+  padding: 0;
+  margin: 0;
+  background: linear-gradient(to left,
+    rgba(7, 27, 82, 100) 0%,
+    rgba(0, 128, 1, 1) 100%
+  );
+}
+
+.App {
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Bigelow Rules';
+  font-size: 70px;
+  color: #0ccac4;
+  text-align: center;
+}
