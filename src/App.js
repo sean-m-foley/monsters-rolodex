@@ -24,6 +24,10 @@ class App extends Component {
       .then(response => response.json())
       .then(users => this.setState({monsters: users}));
   }
+
+  handleChange = e => this.setState( {searchfield: e.target.value});
+
+
   render() {
 
     // destructuring state
@@ -40,7 +44,7 @@ class App extends Component {
     return (
         <div className="App">
           <SearchBox placeholder="Search Monsters"
-            handleChange={e => this.setState( {searchfield: e.target.value} )}
+            handleChange={this.handleChange}
           />
            <CardList monsters={filteredMonsters} />
         </div>
